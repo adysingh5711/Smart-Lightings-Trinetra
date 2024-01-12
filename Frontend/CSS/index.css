@@ -85,9 +85,9 @@ nav a {
 }
 
 .home-image-container {
-    position: absolute;
-    margin-top: -16%;
-    margin-left: 15%;
+    position: relative;
+    margin-top: -5%;
+    margin-left: 51%;
 }
 
 @media screen and (min-width: 601px) {

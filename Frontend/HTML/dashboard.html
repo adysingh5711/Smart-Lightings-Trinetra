@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>besocial Dashboard</title>
+    <link rel="stylesheet" href="../CSS/index_s.css" />
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!---------------------------------------------------------- Navigation Bar -------------------------------------------------------->
+    <header>
+        <a href="../../index.html" class="logo"><img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img"></a>
+
+        <nav class="nav">
+            <div class="nav-icon">
+            <!--
+                <div class="notification">
+                    <a href="#">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </a>
+                </div> 
+            -->
+                <a href="../../index.html" title="Home">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+
+                <a href="../HTML/dashboard.html" title="Dashboard">
+                    <ion-icon name="apps-outline"></ion-icon>
+                </a>
+
+                <a href="#" title="Our Services">
+                    <ion-icon name="construct-outline"></ion-icon>
+                </a>
+
+                <a href="#" title="Resources">
+                    <ion-icon name="document-outline"></ion-icon>
+                </a>
+
+                <a href="../HTML/AboutUS.html" title="About Us">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                </a>
+
+                <a href="#" title="Login">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container_S" style="display: flex;">
+        <!------------------------------------------------------ Left Side Bar --------------------------------------------------------->
+        <div class="left-sidebar_s">
+            <div class="Dashboard">
+                <h1 class="Dashboard" id="Dashboard_title" style="font-size: 2.5vw">
+                    Dashboard
+                </h1>
+            </div>
+
+            <hr class="your_info" style="margin-top: 0.5vw;">
+
+            <div class="tab">
+                <div class="tablinks" onclick="openSetting(event, 'yr_info')" id="defaultOpen">
+                    <div class="div_container">
+                        <div id="logo_1" class="logo_s" onclick="toggleActive('logo_1');">
+                            <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                            <span>
+                                <h3 class="your_info" style="display: inline">Your Information</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="your_info" />
+                <!------------------------------------------------------ Actual Dashboard -------------------------------------------------->
+                <div class="main_Dashboard">
+                    <div class="tablinks" onclick="openSetting(event, 'Priv')">
+                        <div class="div_container">
+                            <div id="logo_2" class="logo_s" onclick="toggleActive('logo_2');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Privacy</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Prof_Tag')">
+                        <div class="div_container">
+                            <div id="logo_3" class="logo_s" onclick="toggleActive('logo_3');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Profile and Tagging</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Publ')">
+                        <div class="div_container">
+                            <div id="logo_4" class="logo_s" onclick="toggleActive('logo_4');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Public Posts</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Block')">
+                        <div class="div_container">
+                            <div id="logo_5" class="logo_s" onclick="toggleActive('logo_5');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Blocking</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Lang')">
+                        <div class="div_container">
+                            <div id="logo_6" class="logo_s" onclick="toggleActive('logo_6');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Language and Region</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablinks" onclick="openSetting(event, 'Stor')">
+                        <div class="div_container">
+                            <div id="logo_7" class="logo_s" onclick="toggleActive('logo_7');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Stories</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="your_info" style="margin-top: 0.5vw;">
+
+                    <div class="tablinks" onclick="openSetting(event, 'Notif')">
+                        <div class="div_container">
+                            <div id="logo_8" class="logo_s" onclick="toggleActive('logo_8');">
+                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Notifications</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="your_info" style="margin-top: 0.5vw;">
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------ Middle or Right Bar -------------------------------------------------->
+        <div class="mid_bar">
+            <div class="mid_bar_content">
+                <!---------------------------------------------- Your Information------------------------------------------------------->
+                <div id="yr_info" class="div_container_content">
+                    <h3 style="text-align: left;">Your Information</h3>
+                    <br><br>
+                    <div class="prof_img">
+                        <img src="profile-img/aditya singh.jpg" alt="user_profile_image" class="prof_img_pic" >
+                    </div>
+
+                    <br>
+
+                    <div class="user_id">
+                        <span>Username: </span> 
+                        <div class="user_name">singhaditya5711 </div>
+                    </div>
+
+                    <br><br><br> 
+
+                    <div class="user_website" >
+                        <span>Website: </span>
+                        <div class="input-box">
+                            <input class="input-field" type="text" pattern="^(https?|ftp)://[^\s/$.?#].[^\s]*$" required placeholder="Enter your website URL" title="Please enter a valid website URL">
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="user_bio" >
+                        <span>Bio: </span>
+                        <textarea class="input_bio" placeholder="Enter your Bio" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <br><br>
+
+                    <div class="user_gender">
+                        <span>Gender: </span>
+                        <div class="gender_box">
+                            <select class="gender_field" required>
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+
+                </div>
+
+                <div id="Priv" class="div_container_content">
+                    <h3>Privacy</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Prof_Tag" class="div_container_content">
+                    <h3>Profile and Tagging</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Publ" class="div_container_content">
+                    <h3>Public Posts</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Block" class="div_container_content">
+                    <h3>Blocking</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Lang" class="div_container_content">
+                    <h3>Language and Region</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Stor" class="div_container_content">
+                    <h3>Stories</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Notif" class="div_container_content">
+                    <h3>Notifications</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleActive(id) {
+        var elements = document.querySelectorAll(".logo_s");
+        elements.forEach(function (element) {
+            if (element.id === id) {
+                element.classList.add("active");
+            } else {
+                element.classList.remove("active");
+            }
+        });
+    }
+
+    function openSetting(evt, SettingName) {
+        var i, div_container_content, tablinks;
+        div_container_content = document.getElementsByClassName("div_container_content");
+        for (i = 0; i < div_container_content.length; i++) {
+            div_container_content[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(SettingName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</html>

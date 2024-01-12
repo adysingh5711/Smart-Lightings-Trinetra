@@ -26,7 +26,7 @@ menuIcon.addEventListener('click', () => {
 });
 
 function openNewPage(){
-    window.location.href = "login-page.html";
+    window.location.href = "Frontend/HTML/dashboard.html";
 }
 
 
