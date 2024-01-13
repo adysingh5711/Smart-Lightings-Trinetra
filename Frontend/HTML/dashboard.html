@@ -17,7 +17,7 @@
 
     <!---------------------------------------------------------- Navigation Bar -------------------------------------------------------->
     <header>
-        <a href="../../index.html" class="logo"><img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img"></a>
+        <a href="../../index.html" class="logo"><img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img"></a>
 
         <nav class="nav">
             <div class="nav-icon">
@@ -71,9 +71,9 @@
                 <div class="tablinks" onclick="openSetting(event, 'yr_info')" id="defaultOpen">
                     <div class="div_container">
                         <div id="logo_1" class="logo_s" onclick="toggleActive('logo_1');">
-                            <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                            <img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img_s" />
                             <span>
-                                <h3 class="your_info" style="display: inline">Your Information</h3>
+                                <h3 class="your_info" style="display: inline">Our Information</h3>
                             </span>
                         </div>
                     </div>
@@ -85,9 +85,11 @@
                     <div class="tablinks" onclick="openSetting(event, 'Priv')">
                         <div class="div_container">
                             <div id="logo_2" class="logo_s" onclick="toggleActive('logo_2');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <a href="statistics.html" title="Statistics" style="font-size: 1.5rem;">
+                                    <ion-icon name="bar-chart-outline"></ion-icon>
+                                </a>
                                 <span>
-                                    <h3 class="your_info" style="display: inline">Privacy</h3>
+                                    <h3 class="your_info" style="display: inline">Statistics</h3>
                                 </span>
                             </div>
                         </div>
@@ -96,9 +98,11 @@
                     <div class="tablinks" onclick="openSetting(event, 'Prof_Tag')">
                         <div class="div_container">
                             <div id="logo_3" class="logo_s" onclick="toggleActive('logo_3');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <a href="voice-analysis.html" title="Voice Analysis" style="font-size: 1.5rem;">
+                                    <ion-icon name="mic-outline"></ion-icon>
+                                </a>
                                 <span>
-                                    <h3 class="your_info" style="display: inline">Profile and Tagging</h3>
+                                    <h3 class="your_info" style="display: inline"> Voice Analysis</h3>
                                 </span>
                             </div>
                         </div>
@@ -107,9 +111,11 @@
                     <div class="tablinks" onclick="openSetting(event, 'Publ')">
                         <div class="div_container">
                             <div id="logo_4" class="logo_s" onclick="toggleActive('logo_4');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <a href="maps.html" title="Maps" style="font-size: 1.5rem;">
+                                    <ion-icon name="map-outline"></ion-icon>
+                                </a>
                                 <span>
-                                    <h3 class="your_info" style="display: inline">Public Posts</h3>
+                                    <h3 class="your_info" style="display: inline">Map</h3>
                                 </span>
                             </div>
                         </div>
@@ -118,9 +124,11 @@
                     <div class="tablinks" onclick="openSetting(event, 'Block')">
                         <div class="div_container">
                             <div id="logo_5" class="logo_s" onclick="toggleActive('logo_5');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <a href="alerts.html" title="Alerts" style="font-size: 1.5rem;">
+                                    <ion-icon name="alert-circle-outline"></ion-icon>
+                                </a>
                                 <span>
-                                    <h3 class="your_info" style="display: inline">Blocking</h3>
+                                    <h3 class="your_info" style="display: inline">Alerts</h3>
                                 </span>
                             </div>
                         </div>
@@ -129,32 +137,40 @@
                     <div class="tablinks" onclick="openSetting(event, 'Lang')">
                         <div class="div_container">
                             <div id="logo_6" class="logo_s" onclick="toggleActive('logo_6');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <!-- <img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img_s" /> -->
+                                <a href="helpline.html" title="Helpline" style="font-size: 1.5rem;">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </a>
                                 <span>
-                                    <h3 class="your_info" style="display: inline">Language and Region</h3>
+                                    <h3 class="your_info" style="display: inline">Helpline</h3>
                                 </span>
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- 
                     <div class="tablinks" onclick="openSetting(event, 'Stor')">
                         <div class="div_container">
                             <div id="logo_7" class="logo_s" onclick="toggleActive('logo_7');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img_s" />
                                 <span>
                                     <h3 class="your_info" style="display: inline">Stories</h3>
                                 </span>
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <hr class="your_hr" style="margin-top: 0.5vw;">
 
                     <div class="tablinks" onclick="openSetting(event, 'Notif')">
                         <div class="div_container">
                             <div id="logo_8" class="logo_s" onclick="toggleActive('logo_8');">
-                                <img src="../Images/Trinetra.png" alt="besociallogo" class="logo-img_s" />
+                                <a href="help.html" title="Help" style="font-size: 1.5rem;">
+                                    <ion-icon name="help-outline"></ion-icon>
+                                </a>
                                 <span>
-                                    <h3 class="your_info" style="display: inline">Notifications</h3>
+                                    <h3 class="your_info" style="display: inline">Help</h3>
                                 </span>
                             </div>
                         </div>
@@ -170,85 +186,111 @@
         <!------------------------------------------------------ Middle or Right Bar -------------------------------------------------->
         <div class="mid_bar">
             <div class="mid_bar_content">
-                <!---------------------------------------------- Your Information------------------------------------------------------->
+                <!---------------------------------------------- Our Information------------------------------------------------------->
                 <div id="yr_info" class="div_container_content">
-                    <h3 style="text-align: left;">Your Information</h3>
-                    <br><br>
-                    <div class="prof_img">
-                        <img src="profile-img/aditya singh.jpg" alt="user_profile_image" class="prof_img_pic" >
-                    </div>
+                    <!-- <h1 class="text-2xl text-left">Our Information</h1>
+                    <br><br> -->
+                    
+                    <section>
+                        <h1 class="text-4xl font-bold mb-4">Innovative Urban Solutions: Enhancing Lives Through Technology</h1>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Welcome to our Information page</h2>
+                        <p class="mb-4">At the crossroads of technological advancement and societal well-being, our innovative solution seeks to redefine how we experience and safeguard public spaces.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Unlocking Potential with Automated Street Lights</h2>
+                        <p class="mb-4">Imagine a world where street lights aren't just sources of illumination but smart, energy-efficient guardians of our urban landscapes. Our automated street lights, powered by motion sensors and state-of-the-art LED technology, are the pioneers of energy conservation.</p>
+                        <p class="mb-4">They adapt to real-time environmental conditions, activating only when needed and significantly reducing both energy consumption and maintenance costs.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Fortifying Public Safety with Advanced Security Measures</h2>
+                        <p class="mb-4">Beyond energy conservation, our system integrates a revolutionary security solution triggered by a simple push of a button. The magic unfolds as the system initiates audio recording, swiftly processed in real-time. Distress signals or alarming phrases prompt automated alerts to law enforcement, ensuring swift responses to potential threats or emergencies.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">A Balancing Act: Privacy Protection at Its Core</h2>
+                        <p class="mb-4">While championing security measures, we understand the importance of privacy. Our system selectively triggers alerts based on specific distress signals, striking a delicate balance between efficacy and privacy preservation. It's a testament to our commitment to fortifying security without compromising individual rights.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">The Future Unveiled: Empowering Communities</h2>
+                        <p class="mb-4">This interconnected network of automated street lights and advanced security solutions heralds a new era in urban infrastructure management. Beyond mere functionality, it empowers communities, fostering safer, more sustainable public spaces. It's not just about technology; it's about enhancing the overall quality of life.</p>
+                    </section>
+                
+                    <!-- Add more sections here with appropriate Tailwind classes -->
+                
+                    <section>
+                        <p class="mb-4">Join us on this journey as we highlight the transformative power of integrating advanced technologies into urban landscapes. Together, let's pave the way to a progressive and safer future.</p>
+                    </section>
+                
 
+                    <br><br>
+
+                </div>
+
+                <!---------------------------------------------- Statistics------------------------------------------------------->
+                <div id="Priv" class="div_container_content">
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Smart Street Lights: A Sustainable Solution</h2>
+                        <p class="mb-4">Through the implementation of smart street lights, our data reflects a substantial decrease in energy consumption, fostering a more sustainable and cost-effective urban environment. Furthermore, the system demonstrates a significant reduction in maintenance needs, ensuring prolonged operational efficiency and minimal disruptions in public spaces.</p>
+                    </section>
+                    
                     <br>
 
-                    <div class="user_id">
-                        <span>Username: </span> 
-                        <div class="user_name">singhaditya5711 </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc; margin-right: 10px;" src="https://thingspeak.com/channels/2391684/charts/2?bgcolor=%23ffffff&color=%23d62020&days=1&results=60&title=Humidity&xaxis=Time&yaxis=Humidity"></iframe>
+                    
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2391684/widgets/783191"></iframe>
+
                     </div>
 
-                    <br><br><br> 
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe width="900" height="520" style="border: 1px solid #cccccc; margin-right: 5px;" src="https://thingspeak.com/channels/233674/charts/6?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&days=1&title=Temperatur+v%C3%A4xthuset&type=line&xaxis=Datum&yaxis=Temp+%C2%B0C"> </iframe>
 
-                    <div class="user_website" >
-                        <span>Website: </span>
-                        <div class="input-box">
-                            <input class="input-field" type="text" pattern="^(https?|ftp)://[^\s/$.?#].[^\s]*$" required placeholder="Enter your website URL" title="Please enter a valid website URL">
-                        </div>
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/apps/matlab_visualizations/20199?height=auto&width=auto"></iframe>
                     </div>
-
-                    <br><br>
-
-                    <div class="user_bio" >
-                        <span>Bio: </span>
-                        <textarea class="input_bio" placeholder="Enter your Bio" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <br><br>
-
-                    <div class="user_gender">
-                        <span>Gender: </span>
-                        <div class="gender_box">
-                            <select class="gender_field" required>
-                                <option value="" disabled selected>Select your gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <br><br>
-
+                    
+                    
+                    
                 </div>
 
-                <div id="Priv" class="div_container_content">
-                    <h3>Privacy</h3>
-                    <p>Paris is the capital of France.</p>
-                </div>
-
+                <!---------------------------------------------- Voice------------------------------------------------------->
                 <div id="Prof_Tag" class="div_container_content">
                     <h3>Profile and Tagging</h3>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
 
+                <!---------------------------------------------- Map------------------------------------------------------->
                 <div id="Publ" class="div_container_content">
                     <h3>Public Posts</h3>
                     <p>London is the capital city of England.</p>
                 </div>
 
+                <!---------------------------------------------- Alerts------------------------------------------------------->
                 <div id="Block" class="div_container_content">
                     <h3>Blocking</h3>
                     <p>Paris is the capital of France.</p>
                 </div>
 
+                <!---------------------------------------------- Helpline------------------------------------------------------->
                 <div id="Lang" class="div_container_content">
                     <h3>Language and Region</h3>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
 
+                <!---------------------------------------------- Your Information------------------------------------------------------->
+                <!-- 
                 <div id="Stor" class="div_container_content">
                     <h3>Stories</h3>
                     <p>London is the capital city of England.</p>
-                </div>
+                </div> 
+            -->
 
+                <!---------------------------------------------- Help------------------------------------------------------->
                 <div id="Notif" class="div_container_content">
                     <h3>Notifications</h3>
                     <p>Paris is the capital of France.</p>

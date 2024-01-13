@@ -25,15 +25,16 @@
 
 
 .logo_s {
-    margin-left: 0.5vw;
+    margin-left: 1.5vw;
     display: inline-flex; /*Responsible for getting the logo and text in same line*/
     align-items: center;
-    width: 23.5vw; /* Set box width to 24.5vw */
+    width: 21.5vw; /* Set box width to 24.5vw */
     transition: background-color 0.3s;
     background-color: transparent; /* Initial transparent background */
     border: none; /* Remove border */
     cursor: pointer; /* Add pointer cursor for click interaction */
     border-radius: 10px; /* Add rounded corners */
+    padding-left: 10px;
 }
 
 
@@ -82,130 +83,28 @@
 
 /* ****************************************************************mid bar************************************************* */
 .mid_bar{
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    width: 73vw;
+    /* display: flex; */
+    justify-content: left; /* Center content horizontally */
+    width: 81%;
     padding: 0.5vw;
     background-color: lightblue;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     
 }
 .mid_bar_content{
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap; /* Allow content to wrap within the container */
-    max-width: 70vw; /* Adjust the max-width for responsiveness */
+    max-width: 100%; /* Adjust the max-width for responsiveness */
     padding: 2vw;
     background-color: #fff3;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow values */
     text-align: center;
-    margin-top: 2vw;
-    margin-bottom: 2vw; /* Add margin at the bottom */
-    margin-left: 2vw; /* Add margin to the left */
-    margin-right: 2vw; /* Add margin to the right */
+    margin: 2vw;
 }
 
 /* *********************************************Your Information******************************************* */
-.prof_img_pic{
-    border:5px solid white; 
-    width:25%;
-    border-radius: 50%;
-}
-
-.user_id {
-    display: inline-flex; /* Display as inline-flex */
-    flex-direction: row;
-    align-items: center; /* Vertically align the items */
-    justify-content: center; /* Center the content horizontally */
-    text-align: center;
-    flex: 1;
-}
-
-.user_name {
-    display: inline-flex; /* Display as inline-flex */
-    margin-left: 5px;
-    font-weight: bold;
-    color: white;
-}
-
-.user_website {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.input-box {
-    position: relative;
-    width: 20vw;
-    margin-left: 3vw;
-}
-
-.input-field {
-    font-size: 14px;
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    background-color: rgba(255, 253, 253, 0.855);
-}
-.box-text {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #9a9a9a;
-    pointer-events: none;
-}
-
-/* Placeholder text styling */
-.input-box .box-text {
-    color: #9a9a9a;
-    pointer-events: none;
-}
-
-/* Styling when the input is focused */
-.input-box .input-field:focus + .box-text {
-    color: transparent;
-}
-
-/* Styling when the input is hovered */
-.input-box:hover .box-text {
-    color: #9a9a9a;
-}
-
-.user_bio{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.input_bio{
-background: rgba(255, 253, 253, 0.855);
-margin-left: 4.9vw;
-border: 1px solid rgb(var(--ig-stroke));
-border-radius: 6px;
-box-sizing: border-box;
-color: rgb(var(--ig-primary-text));
-flex: 0 1 355px;
-font-size: 12px;
-height: 60px;
-padding: 6px 10px;
-resize: vertical;
-}
-
-.user_gender{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.gender_box{
-    width: 20vw;
-    margin-left: 3.2vw;
-}
-
-.gender_field{
-    width: 60%;
-    padding: 6px;
-    border: 1px solid #ccc;
-    background-color:rgba(255, 253, 253, 0.855);
-    border-radius: 6px;
+#yr_info,
+#Priv {
+    text-align: justify;
+    color: #172141;
 }
