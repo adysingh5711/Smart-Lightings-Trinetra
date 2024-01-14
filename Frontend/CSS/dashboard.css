@@ -66,10 +66,6 @@
     margin-bottom: 0.25vw;
 }
 
-.button_container {
-    display: inline-block;
-}
-
 
 .main_Dashboard{
     width: 25vw;
@@ -104,7 +100,60 @@
 
 /* *********************************************Your Information******************************************* */
 #yr_info,
-#Priv {
+#Priv,
+#Prof_Tag,
+#Publ,
+#Block,
+#Lang,
+#Notif {
     text-align: justify;
     color: #172141;
 }
+
+#Voice{
+    text-align: left
+}
+
+#voiceForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjusted width */
+    margin: 20px; /* Added margin */
+    align-items: center;
+}
+
+label, input, button, textarea {
+    margin-bottom: 10px;
+}
+
+#voiceInput, #textOutput {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #172141;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+#map {
+    height: 95%;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
